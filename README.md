@@ -1,2 +1,2 @@
 # CloudNative
-This repository contains my Cloud Native Projects
+This repository will contain 20 projects developed with HTML,CSS and JavaScript.
