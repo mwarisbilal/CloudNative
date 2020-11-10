@@ -1,0 +1,25 @@
+name: Deploy Project to Surge
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Job_Deploy_surge
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Installing Node
+    - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+          
+    - name: Installing Surge
+      run : npm install --global surge
+      
+    - name: Deploying Project to Surge
+      run : surge ./  warisbilal_jsprojects.surge.sh  --token ${{ secrets.SURGE_TOKEN }}
