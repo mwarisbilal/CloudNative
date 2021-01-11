@@ -69,6 +69,6 @@ span.timespan {
 
 @media(max-width: 800px) {
     .screen, .controls {
-        width: 60%;
+        width: 40%;
     }
 }
