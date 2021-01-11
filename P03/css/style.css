@@ -30,7 +30,7 @@ h1 {
 }
 
 .controls {
-    background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0,0,0,0.6);
     color: white;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .fa-stop {
-    color: red orangered;
+    color: orangered;
 }
 
 .fa-pause {
@@ -68,7 +68,7 @@ span.timespan {
 }
 
 @media(max-width: 800px) {
-    .screen .controls {
-        width: 90%;
+    .screen, .controls {
+        width: 60%;
     }
 }
